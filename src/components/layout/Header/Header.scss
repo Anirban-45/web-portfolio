@@ -1,0 +1,9 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_mixins.scss";
+
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: $accent-color;
+    position: relative;
+}

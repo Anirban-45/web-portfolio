@@ -1,0 +1,9 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_mixins.scss";
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: $accent-color;
+    position: relative;
+}
