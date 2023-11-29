@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
-footer {
-  padding: 2rem;
-  text-align: center;
-  background-color: #374259;
-  position: relative;
+.footer {
+  background-color: #fafffe;
+  color: rgb(27, 29, 34);
+  margin-top: 20px;
+  padding: 20px 60px;
+}
+.footer .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+}
+@media screen and (max-width: 375px) {
+  .footer .links {
+    margin-top: 8px;
+  }
 }

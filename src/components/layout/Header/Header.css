@@ -1,8 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
-header {
-  padding: 10px;
-  text-align: center;
-  background-color: #374259;
-  position: relative;
+.header {
+  height: 90px;
+  padding-top: 32px;
+  background-color: #fafffe;
+}
+.header .inner {
+  height: 56px;
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  padding-bottom: 20px !important;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #a4c4a1;
+}
+.header .inner .logo {
+  height: 50px;
+}
+.header .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.header .link {
+  display: block;
+  line-height: 1;
+  font-family: "Urbanist", sans-serif;
+  padding: 0px 0px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: rgb(27, 29, 34);
+  font-size: 18px;
+  font-weight: 600;
+}
+[data-mantine-color-scheme] .header .link[data-active] {
+  color: rgb(215, 143, 19);
 }

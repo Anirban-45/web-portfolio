@@ -1,9 +1,46 @@
 @import "../../../styles/_variables.scss";
 @import "../../../styles/_mixins.scss";
 
-header {
-    padding: 10px;
-    text-align: center;
-    background-color: $accent-color;
-    position: relative;
+.header {
+    height: 90px;
+    padding-top: 32px;
+    background-color: $background-color;
+    
+    .inner {
+        height: 56px;
+        display: flex;
+        padding: 0px 20px 0px 20px;
+        padding-bottom: 20px !important;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $secondary-color;
+    
+        .logo {
+            height: 50px;
+        }
+    }
+    .links {
+        @include flex-container(row, center, center, 30px);
+    }
+    
+    .link {
+        display: block;
+        line-height: 1;
+        font-family: $main-font-family;
+        padding: rem(8px, 8px) rem(12px, 12px);
+        border-radius: var(--mantine-radius-sm);
+        text-decoration: none;
+        color: $primary-text-color;
+        font-size: 18px;
+        font-weight: 600;
+    
+        @mixin hover {
+            background-color: $secondary-text-color;
+        }
+    
+        [data-mantine-color-scheme] &[data-active] {
+            color: $secondary-text-color;
+        }
+    }
 }
+
